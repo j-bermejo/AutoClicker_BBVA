@@ -7,5 +7,8 @@
         <span class="place" #placeholder>Name *</span><br>
         <span class="errorMess" *ngIf="incorrectUser">{{errorMessage}}</span>
     </div>
-    <input class='login' type='button' value='Join' (click)="validateUser()" />
+    <div class="btns">
+        <input class='login' type='button' value='Join' (click)="validateUser()" />
+        <input class='ranking' type='button' value='Ranking' (click)="showRanking()" />
+    </div>
 </div>

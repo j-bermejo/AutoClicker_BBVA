@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Player } from 'src/app/objects/Player';
 
 @Component({
@@ -37,7 +37,7 @@ export class GameComponent implements OnInit {
   public megaClickerCostView: string = `${this.megaClickerCost}`;
 
 
-  constructor(private route: ActivatedRoute, private router: Router, private render: Renderer2) {
+  constructor(private router: Router, private render: Renderer2) {
 
   }
 

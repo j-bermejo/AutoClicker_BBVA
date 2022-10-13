@@ -1,0 +1,14 @@
+<div class='container'>
+    <div class="header">
+        <label>Ranking</label>
+        <div class="exit" (click)="exit()"><i class="fa-solid fa-right-from-bracket"></i></div>
+    </div>
+    <div class="dataPlayer" *ngFor="let user of players">
+        <label>Name: {{user.userName}}</label><br>
+        <label>Score: {{user.userScore}}</label><br>
+        <label>Auto clickers: {{user.userAutoClickers}}</label><br>
+        <label> Auto clicker upgrades: {{user.userAutoClickerUpgrade}}</label><br>
+        <label>Mega clickers: {{user.userMegaClicker}}</label>
+        <hr>
+    </div>
+</div>

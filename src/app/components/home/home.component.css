@@ -33,14 +33,31 @@
     font-family: 'Calibri';
 }
 
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    width: 75%;
+    margin-top: 10%;
+    margin-right: 3%;
+}
+
 .login {
     align-self: center;
-    margin-top: 50px;
     background-color: skyblue;
     font-size: large;
     border-radius: 5px;
-    height: 8%;
-    width: 75%;
+    width: 45%;
+    font-family: 'Calibri';
+}
+
+.ranking {
+    align-self: center;
+    background-color: skyblue;
+    font-size: large;
+    border-radius: 5px;
+    width: 45%;
     font-family: 'Calibri';
 }
 

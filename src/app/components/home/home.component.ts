@@ -11,7 +11,7 @@ import { Player } from '../../objects/Player';
 export class HomeComponent implements OnInit {
 
   public inputUserName: string = "";
-  public registeredUsers: Player[] = [new Player('Squid', 0, 0, 0, 0, 0), new Player('Foo', 0, 0, 0, 0, 0), new Player('Javi', 0, 0, 0, 0, 0)];
+  public registeredUsers: Player[] = [new Player('Squid', 0, 0, 0, 0), new Player('Foo', 0, 0, 0, 0), new Player('Javi', 0, 0, 0, 0)];
   public namesList: String[] = [];
   public players: Player[] = [];
 
@@ -46,7 +46,6 @@ export class HomeComponent implements OnInit {
           // this.currentPlayer = user;
           localStorage.setItem('localUserName', user.userName);
           localStorage.setItem('localUserScore', user.userScore.toString());
-          localStorage.setItem('localUserMaxScore', user.userMaxScore.toString());
           localStorage.setItem('localAutoClicker', user.userAutoClickers.toString());
           localStorage.setItem('localAutoClickerUpgrade', user.userAutoClickerUpgrade.toString());
           localStorage.setItem('localMegaClicker', user.userMegaClicker.toString());
@@ -67,6 +66,10 @@ export class HomeComponent implements OnInit {
       this.render.setStyle(this.placeholder.nativeElement, 'color', 'red');
       this.isWrongUser.nativeElement.value = '';
     }
+  }
+
+  public showRanking(){
+    this.router.navigate(['/ranking']);
   }
 
 }
