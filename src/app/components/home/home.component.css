@@ -11,17 +11,18 @@
 
 .logo {
     margin-top: 20%;
-    margin-left: 40%;
     background-color: plum;
     color: black;
     height: 50px;
     width: 50px;
     border-radius: 50px;
+    font-size: 25px;
+    align-self: center;
 }
 
-.logo img {
-    margin-left: -8px;
-    margin-top: -8px
+.logo i {
+    margin-left: 15px;
+    margin-top: 13px
 }
 
 .title {

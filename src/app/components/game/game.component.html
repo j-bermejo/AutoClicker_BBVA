@@ -1,7 +1,7 @@
 <div class='container'>
     <div class="header">
         <span>Hi {{userName}}</span>
-        <button class="exit" (click)="exit()"><img src="../../../assets/exit.png"></button>
+        <div class="exit" (click)="exit()"><i class="fa-solid fa-right-from-bracket"></i></div>
     </div>
     <div class="gameContent">
         <p class="score">Merged pull request: {{scoreView}}</p>
@@ -11,15 +11,15 @@
             <span *ngIf="megaClicker >=1">Clicker upgrades: {{megaClicker}}</span>
         </p>
         <!-- <div class="shop"> -->
-        <button class="singleMerge" (click)="addMerge()"><img src="../../../assets/merge.png">MERGE</button>
+        <button class="singleMerge" (click)="addMerge()"><i class="fa-solid fa-arrow-turn-up"></i> MERGE</button>
         <button class="shopButtons" *ngIf="score>=50 || autoClickers>0" (click)="buyAutoClicker()" [disabled]="!canBuyAutoClicker" #autoMergerBtn>
-            <img src="../../../assets/shop.png">BUY AUTO MERGER ({{autoClickerCostView}})
+            <i class="fa-solid fa-basket-shopping"></i> BUY AUTO MERGER ({{autoClickerCostView}})
         </button>
         <button class="shopButtons" *ngIf="score>=2000 || autoClickerUpgrade>0" (click)="buyAutoClickerUpgrade()" [disabled]="!canBuyAutoClickerUpgrade" #autoMergerUpgradeBtn>
-            <img src="../../../assets/shop.png">UPGRADE AUTO ({{autoClickerUpgradeCostView}})
+            <i class="fa-solid fa-basket-shopping"></i> UPGRADE AUTO ({{autoClickerUpgradeCostView}})
         </button>
         <button class="shopButtons" *ngIf="score>=5000 || megaClicker>0" (click)="buyMegaClicker()" [disabled]="!canBuyMegaClicker" #megaClickerBtn>
-            <img src="../../../assets/shop.png">BUY MEGA CLICKER ({{megaClickerCostView}})
+            <i class="fa-solid fa-basket-shopping"></i> BUY MEGA CLICKER ({{megaClickerCostView}})
         </button>
         <!-- </div> -->
     </div>

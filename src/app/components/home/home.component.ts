@@ -32,8 +32,7 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-   }
+  ngOnInit() { }
 
   public saveUser(userInput: string) {
     this.inputUserName = userInput;
