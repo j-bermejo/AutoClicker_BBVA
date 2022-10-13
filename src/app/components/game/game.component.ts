@@ -90,9 +90,6 @@ export class GameComponent implements OnInit {
     });
   }
 
-  /*Cambiar el tema del autoclick, con una variable q indique q se ha realizado cada compra cambiando de true a false segun se compre
-  añadir otra variable que pause el juego si se sale y ver como cambiar esa variable cuando se cierre ventana */
-
   public addMerge() {
     this.score += this.clickPower;
     this.updateUserData();
