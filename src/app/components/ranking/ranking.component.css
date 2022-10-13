@@ -49,3 +49,10 @@
 .dataPlayer label {
     margin-left: 15px;
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin-left: 5%;
+        width: 90%;
+    }
+}
