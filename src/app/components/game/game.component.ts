@@ -165,21 +165,21 @@ export class GameComponent implements OnInit {
     if (this.score >= this.autoClickerUpgradeCost) {
       this.canBuyAutoClickerUpgrade = true;
       this.render.setStyle(this.autoMergerUpgradeBtn.nativeElement, 'background-color', 'skyblue');
-      this.render.setStyle(this.autoMergerBtn.nativeElement, 'color', 'black');
+      this.render.setStyle(this.autoMergerUpgradeBtn.nativeElement, 'color', 'black');
     } else {
       this.canBuyAutoClickerUpgrade = false;
       this.render.setStyle(this.autoMergerUpgradeBtn.nativeElement, 'background-color', 'rgb(50, 50, 50)');
-      this.render.setStyle(this.autoMergerBtn.nativeElement, 'color', 'grey');
+      this.render.setStyle(this.autoMergerUpgradeBtn.nativeElement, 'color', 'grey');
     }
 
     if (this.score >= this.megaClickerCost) {
       this.canBuyMegaClicker = true;
       this.render.setStyle(this.megaClickerBtn.nativeElement, 'background-color', 'skyblue');
-      this.render.setStyle(this.autoMergerBtn.nativeElement, 'color', 'black');
+      this.render.setStyle(this.megaClickerBtn.nativeElement, 'color', 'black');
     } else {
       this.canBuyMegaClicker = false;
       this.render.setStyle(this.megaClickerBtn.nativeElement, 'background-color', 'rgb(50, 50, 50)');
-      this.render.setStyle(this.autoMergerBtn.nativeElement, 'color', 'grey');
+      this.render.setStyle(this.megaClickerBtn.nativeElement, 'color', 'grey');
     }
   }
 
